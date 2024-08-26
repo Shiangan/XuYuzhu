@@ -170,16 +170,7 @@
         transform: translateY(0); /* 返回原位 */
     }
 }
-            </style>
-
-        <scripts>document.addEventListener('DOMContentLoaded', function() {
-    const fadeInTexts = document.querySelectorAll('.fade-in-text');
-    fadeInTexts.forEach((text, index) => {
-        setTimeout(() => {
-            text.style.opacity = '1';
-        }, index * 2000); // 每段延迟2秒
-    });
-});</scripts>
+            
         
 <!-- 花籃選項 -->
 <section id="donate-flower">
@@ -286,31 +277,9 @@
             text.style.opacity = '1';
         }, index * 1500); // 每段延迟1.5秒
     });
-</script>
 
-    <!-- 页脚 -->
-    <footer style="text-align: center;">
-    <p>承辦禮儀公司 祥安生命有限公司 ｜ 禮儀師：陳柏元</p>
-    <p>© 2024 訃聞公告 | <span class="footer-signature">祥安生命有限公司</span> 版權所有 |</p>
-</footer>
-    <style>
-    footer {
-    font-family: '华康钢笔体W2.ttc', sans-serif;
-    padding: 8px 0;
-    font-size: 0.85em;
-    background-color: #f9f9f9;
-    border-top: 1px solid #dcdcdc;
-    text-align: center;
-    margin-top: 20px;
-}
-        </style>
     
-<script>
-        // 淡入效果
-        $(window).on('load', function () {
-            $('.fade-in-text').css('opacity', '1');
-        });
-
+    
         // 音樂控制
         var music = document.getElementById("background-music");
         window.addEventListener("blur", function () {
