@@ -221,10 +221,13 @@ main {
 
 /* 页脚部分 */
 footer {
-    background-color: #f4f4f4;
-    padding: 10px;
+    font-family: 'YourChosenFont', sans-serif;
+    padding: 8px 0;
+    font-size: 0.85em;
+    background-color: #f9f9f9;
+    border-top: 1px solid #dcdcdc;
     text-align: center;
-    font-family: Arial, sans-serif;
+    margin-top: 20px;
 }
 
 footer p {
