@@ -49,6 +49,37 @@
             });
         }
 
+        .fade-in-text {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .main-photo-section img {
+        width: 100%;
+    }
+
+    .remembrance-item {
+        margin-bottom: 20px;
+    }
+}
+
         // 渐显文本效果
         const fadeInTexts = document.querySelectorAll('.fade-in-text');
         fadeInTexts.forEach((text, index) => {
