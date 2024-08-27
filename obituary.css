@@ -59,22 +59,32 @@ main {
 
 /* 追思与怀念部分 */
 .remembrance-details {
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    justify-content: center;
-    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
 }
 
 .remembrance-item {
-    flex-grow: 1;
-    flex-basis: calc(50% - 40px);
-    max-width: calc(50% - 20px);
-    margin: 10px;
-    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.remembrance-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+/* 每个项目之间的间隔线 */
+.remembrance-item + .remembrance-item {
+    border-top: 1px solid #ddd;
+}
 /* 渐显文字效果 */
 .fade-in-text {
     opacity: 0;
