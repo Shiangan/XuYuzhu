@@ -4,162 +4,155 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
     color: #333;
+    background-color: #f9f9f9;
 }
 
 header {
-    text-align: center;
-    padding: 20px;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
-    max-width: 100px;
-    height: auto;
+    width: 100px;
 }
 
-header h1 {
-    font-size: 24px;
-    margin-top: 10px;
+h1, h2, h3 {
+    margin: 10px 0;
 }
 
 main {
     padding: 20px;
 }
 
-/* 主要照片部分 */
-.main-photo-section img {
-    width: 80%;
-    max-width: 600px; /* 调整最大宽度为600px */
-    height: auto;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: block;
-    margin: 0 auto 20px auto;
-}
-
-#life-story {
+/* 主照片部分 */
+.main-photo-section {
     text-align: center;
-    font-size: 18px;
     margin-bottom: 20px;
 }
 
-/* 訃聞纸本部分 */
-.paper-obituary-section img {
-    width: 80%;
-    max-width: 600px; /* 调整最大宽度为600px */
+#main-photo {
+    max-width: 100%;
     height: auto;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: block;
-    margin: 0 auto 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
 
-.paper-obituary-section h2 {
+#life-story {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+/* 纸本訃告部分 */
+.paper-obituary-section {
     text-align: center;
-    font-size: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-/* 追思与緬懷部分 */
+#paper-obituary {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* 追思与缅怀部分 */
+#remembrance {
+    margin-bottom: 20px;
+}
+
 .remembrance-details {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-around;
-    margin-bottom: 20px;
 }
 
 .remembrance-item {
-    flex: 1 1 calc(50% - 40px); /* 两栏布局 */
-    max-width: calc(50% - 40px);
-    background-color: #fff;
-    padding: 15px;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 200px;
+}
+
+.remembrance-item h3 {
+    margin: 0 0 10px;
+}
+
+.remembrance-item p {
+    margin: 5px 0;
+}
+
+iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    border-radius: 8px;
+}
+
+/* 感谢信息部分 */
+.remembrance-thanks {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* 致赠花篮部分 */
+#donate-flower {
+    margin-bottom: 20px;
+}
+
+#flower-basket-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.flower-basket-item {
+    max-width: 200px;
     text-align: center;
 }
 
-    // 渐显文本效果
-    const fadeInTexts = document.querySelectorAll('.fade-in-text');
-    fadeInTexts.forEach((text, index) => {
-        setTimeout(() => {
-            text.style.opacity = '1';
-        }, index * 1500); // 每段延迟1.5秒显示
-    });
+.flower-basket-item img {
+    width: 100%;
+    height: auto;
 }
 
-        /* 花篮样式 */
-        .flower-basket-item {
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        
-        .flower-basket-item img {
-            width: 100%;
-            max-width: 300px; /* 限制花篮图片的最大宽度 */
-            height: auto;
-            cursor: pointer;
-            border: 1px solid #ccc; /* 图片边框 */
-            border-radius: 10px; /* 圆角 */
-        }
-        
-        .price {
-            margin-top: 10px;
-            font-weight: bold;
-            color: #333;
-        }
-        
-        /* 隐藏花篮画廊，除非显示 */
-        #flower-basket-gallery {
-            display: none;
-        }
+.price {
+    margin-top: 10px;
+    font-size: 16px;
+}
 
-/* 固定聯絡方式 */
+/* 固定联系信息部分 */
 #fixed-links {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 10px;
+    right: 10px;
     display: flex;
-    flex-direction: column;
     gap: 10px;
 }
 
-#fixed-links a {
-    display: inline-block;
+#fixed-links img {
+    vertical-align: middle;
 }
 
 /* 名片及分享按钮部分 */
 #business-card {
     text-align: center;
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 .business-card-img {
-    width: 80%;
-    max-width: 400px;
+    max-width: 100%;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #share-buttons {
-    margin-top: 20px;
-}
-
-#share-buttons p {
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .share-btn {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
 .share-btn img {
@@ -167,53 +160,39 @@ main {
     height: 30px;
 }
 
-        /* 页脚部分的样式 */
-        footer {
-            background-color: #f4f4f4; /* 背景颜色 */
-            padding: 20px; /* 内边距 */
-            text-align: center; /* 文本居中 */
-            font-family: Arial, sans-serif; /* 字体 */
-        }
-
-        footer p {
-            margin: 5px 0; /* 上下外边距 */
-            color: #333; /* 文字颜色 */
-        }
-
-        .footer-signature {
-            font-weight: bold; /* 字体加粗 */
-        }
-
-        .bold {
-            font-weight: bold; /* 字体加粗 */
-            text-decoration: none; /* 去掉链接下划线 */
-        }
-
-        footer img {
-            vertical-align: middle; /* 图标垂直对齐 */
-        }
-
-        footer a {
-            margin: 0 10px; /* 图标间距 */
-        }
-
-        .fade-in-text {
-    opacity: 0; /* 初始透明度为0 */
-    transition: opacity 2s ease-in-out; /* 渐变效果 */
+/* 页脚 */
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
 }
 
+footer p {
+    margin: 5px 0;
+}
 
-/* 响应式设计：在小屏幕上的适应 */
-@media (max-width: 768px) {
-    .remembrance-item {
-        flex: 1 1 100%; /* 单栏布局 */
-        max-width: 100%;
-    }
+.footer-signature {
+    font-weight: bold;
+}
 
-    .main-photo-section img,
-    .paper-obituary-section img,
-    .business-card-img {
-        width: 100%;
-        max-width: none;
-    }
+/* 渐显文本效果 */
+.fade-in-text {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.fade-in-text.visible {
+    opacity: 1;
+}
+
+/* 幻灯片样式 */
+.slides {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides div {
+    flex: 0 0 100%;
+    display: none;
 }
