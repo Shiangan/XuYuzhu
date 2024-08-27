@@ -9,46 +9,29 @@
     <meta property="og:url" content="https://shiangan.com/Shiangan/Liu-Jiren">
     <meta property="og:type" content="website">
     <title>訃聞公告</title>
-    <link rel="stylesheet" href="obituary.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
-    
+    <script src="script.js" defer></script>
 </head>
-    <!-- 固定聯絡方式 -->
-        <div id="fixed-links">
-            <a href="tel:0938179858" class="bold">
-                <img src="image/24小時專線.png" alt="24小時服務電話" style="width: 70px; height: 30px;">
-            </a>
-            <a href="https://line.me/ti/p/TuM5y_Of6I" target="_blank" class="bold">
-                <img src="image/IMG_4177.webp" alt="LINE 聯絡我們" style="width: 50px; height: 50px;">
-            </a>
-        </div>
 <body>
-    <!-- 背景音乐 -->
-    <audio id="background-music" autoplay loop hidden>
-        <source src="千風之歌.m4a" type="audio/mpeg">
-        您的浏览器不支持音频播放。
-    </audio>
-
     <header>
         <img src="image/logo.png" alt="Logo" class="logo">
         <h1>黃徐玉珠 夫人 訃告</h1>
     </header>
 
     <main>
-        <!-- 主要照片部分 -->
         <section class="main-photo-section">
             <img id="main-photo" src="黃徐玉珠的主要照片.JPG" alt="追思照片">
             <p id="life-story">
                 <strong>我們敬愛的親人，黃徐玉珠夫人，於113年08月26日（一），於上午08時50分，家人的陪伴下，安詳離世。</strong>
             </p>
-                 <p>杖期夫 黃德堂 率 孝女 佳玲 親視含殮 遵禮成服 豎靈於 桃園佛緣苑會館 2F ［牌位區15號］。</p>
-                 <p>將設奠於113年09月18日（三）舉行追思會儀式，感謝親友們在這段時間的慰問與關心，您的關懷和鼓勵，陪伴我們度過了這段艱難的時光。</p>
+            <p>杖期夫 黃德堂 率 孝女 佳玲 親視含殮 遵禮成服 豎靈於 桃園佛緣苑會館 2F ［牌位區15號］。</p>
+            <p>將設奠於113年09月18日（三）舉行追思會儀式，感謝親友們在這段時間的慰問與關心，您的關懷和鼓勵，陪伴我們度過了這段艱難的時光。</p>
         </section>
 
-        <!-- 訃告紙本部分 -->
         <section class="paper-obituary-section">
             <h2><strong>訃告正本</strong></h2>
             <a href="徐玉珠的訃聞.jpeg" data-lightbox="paper-obituary" data-title="訃聞紙本">
@@ -56,7 +39,6 @@
             </a>
         </section>
 
-        <!-- 追思與緬懷部分 -->
         <section id="remembrance">
             <h2><strong>追思緬懷</strong></h2>
             <div class="remembrance-details">
@@ -64,49 +46,43 @@
                     <h3><strong>豎靈地點</strong></h3>
                     <p><strong><a href="https://maps.app.goo.gl/mYwMejbz36H8MbuT9?g_st=com.google.maps.preview.copy" target="_blank">桃園［佛緣苑會館］</a></strong></p>
                     <p><strong>桃園佛緣苑 2F ［牌位區15號］</strong></p>
-                    <p><strong>地址：330桃園市桃園區大有路920號 </strong></p>
+                    <p><strong>地址：330桃園市桃園區大有路920號</strong></p>
                 </div>
-                
                 <div class="remembrance-item">
                     <h3><strong>出殯地點</strong></h3>
                     <p><strong><a href="https://maps.app.goo.gl/CkgJFhtxDVLmzzRS6?g_st=com.google.maps.preview.copy" target="_blank">桃園市立殯儀館 ［懷德廳］</a></strong></p>
                     <p><strong>地址：330桃園市桃園區大有路916號</strong></p>
                 </div>
-                
                 <div class="remembrance-item">
                     <h3><strong>出殯日期</strong></h3>
                     <p><strong>中華民國 113年09月18日（三）</strong></p>
                 </div>
-                
                 <div class="remembrance-item">
                     <h3><strong>追思會時間</strong></h3>
                     <p><strong>上午 09:30 家奠禮</strong></p>
                     <p><strong>上午 10:00 公奠禮</strong></p>
                 </div>
-
-                <!-- 联系信息部分 -->
-               <div class="remembrance-item">
-                   <h3><strong>聯絡電話</strong></h2>
-                   <p><strong>佳玲 0973-935-148</strong></p>
+                <section id="contact-info">
+                    <h2><strong>聯絡電話</strong></h2>
+                    <p><strong>佳玲 0973-935-148</strong></p>
+                </section>
+                <div id="maps">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.6055113137354!2d121.55302529999999!3d25.0135172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aa3b0390f463%3A0x9082f68f52193107!2z5Y-w5YyX5biC5oe35oSb6aSo!5e0!3m2!1szh-TW!2stw!4v1723546074779!5m2!1szh-TW!2stw"
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
-
-                <!-- 地圖嵌入 -->
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.6055113137354!2d121.55302529999999!3d25.0135172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aa3b0390f463%3A0x9082f68f52193107!2z5Y-w5YyX5biC5oe35oSb6aSo!5e0!3m2!1szh-TW!2stw!4v1723546074779!5m2!1szh-TW!2stw"
-                    width="100%" 
-                    height="450" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
             </div>
         </section>
 
         <section id="fade-in-text">
-        <section></section>
-<p><strong>敬邀您，與我們一同追思懷念黃徐玉珠夫人，並向您獻上最深的敬意，感謝您。</strong></p>
-                                            <p><strong>家人們，銘記在心，衷心感謝。</strong></p>
+            <p><strong>敬邀您，與我們一同追思懷念黃徐玉珠夫人，並向您獻上最深的敬意，感謝您。</strong></p>
+            <p><strong>家人們，銘記在心，衷心感謝。</strong></p>
         </section>
 
         
