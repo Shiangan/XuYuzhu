@@ -12,75 +12,7 @@
     <title>訃聞公告</title>
     <link rel="stylesheet" href="obituary.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-    <style>
-        /* 頁腳樣式 */
-        footer {
-            background-color: #f4f4f4;
-            padding: 20px;
-            text-align: center;
-            font-family: Arial, sans-serif;
-            color: #333;
-        }
-
-        footer p {
-            margin: 5px 0;
-        }
-
-        .footer-signature {
-            font-weight: bold;
-        }
-
-        .bold {
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        footer img {
-            vertical-align: middle;
-        }
-
-        footer a {
-            margin: 0 10px;
-        }
-
-        /* 淡入效果 */
-        .fade-in-text {
-            opacity: 0;
-            animation: fadeIn 2s forwards;
-        }
-
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-            }
-        }
-
-        /* 花籃畫廊樣式 */
-        #flower-basket-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-
-        .flower-basket-item {
-            max-width: 200px;
-            text-align: center;
-        }
-
-        .flower-basket-item img {
-            width: 100%;
-            height: auto;
-        }
-
-        .price {
-            margin-top: 10px;
-            font-size: 16px;
-        }
-    </style>
-</head>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
 <body>
     <audio id="background-music" autoplay loop>
         <source src="珍珠港事件.mp3" type="audio/mpeg"> 瀏覽器不支持音頻播放。
@@ -136,12 +68,15 @@
                     <p><strong>上午 10：00 公奠禮</strong></p>
                 </div>
 
-                <!-- 地圖嵌入 -->
-                <iframe src="https://www.google.com/maps/place/330%E6%A1%83%E5%9C%92%E5%B8%82%E6%A1%83%E5%9C%92%E5%8D%80%E5%A4%A7%E6%9C%89%E8%B7%AF916%E8%99%9F%E6%A1%83%E5%9C%92%E5%B8%82%E6%94%BF%E5%BA%9C%E6%AE%AF%E8%91%AC%E7%AE%A1%E7%90%86%E6%89%80/@25.0215011,121.3145902,16z/data=!4m6!3m5!1s0x34681e361ce9b9c7:0xb4c3029db3d7b0b2!8m2!3d25.0215011!4d121.3145902!16s%2Fg%2F1w6r5_zy"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
+                <iframe 
+    src="https://www.google.com/maps/place/330%E6%A1%83%E5%9C%92%E5%B8%82%E6%A1%83%E5%9C%92%E5%8D%80%E5%A4%A7%E6%9C%89%E8%B7%AF916%E8%99%9F%E6%A1%83%E5%9C%92%E5%B8%82%E6%94%BF%E5%BA%9C%E6%AE%AF%E8%91%AC%E7%AE%A1%E7%90%86%E6%89%80/@25.0215011,121.3145902,16z/data=!4m6!3m5!1s0x34681e361ce9b9c7:0xb4c3029db3d7b0b2!8m2!3d25.0215011!4d121.3145902!16s%2Fg%2F1w6r5_zy" 
+    width="600" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
 
        <div class="fade-in-container">
     <p class="fade-in-text">感謝親友們在這段時間的慰問與關心，您的關懷和鼓勵，陪伴我們度過了這段艱難的時光。</p>
@@ -261,6 +196,21 @@
     <p>承辦禮儀公司 祥安生命有限公司 ｜ 禮儀師：陳柏元</p>
     <p>© 2024 黃徐玉珠訃聞公告 | <span class="footer-signature">祥安生命有限公司</span>版權所有</p>
 </footer>
+            <style>
+    footer {
+        background-color: #f4f4f4;
+        padding: 20px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        color: #333;
+        position: relative;
+        z-index: 10;
+    }
+
+    footer p {
+        margin: 5px 0;
+    }
+</style>
 
 <!-- JavaScript -->
 <script>
