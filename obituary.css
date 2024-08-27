@@ -68,6 +68,7 @@ main {
 
 /* 追思与緬懷部分 */
 .remembrance-details {
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
