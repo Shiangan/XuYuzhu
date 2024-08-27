@@ -77,14 +77,10 @@ main {
 }
 
 .remembrance-item {
-    flex: 1 1 calc(50% - 40px); /* 两栏布局 */
-    max-width: calc(50% - 40px);
-    background-color: #fff;
-    padding: 15px;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    flex-grow: 1;
+    flex-basis: calc(50% - 40px);
+    margin: 10px; /* 调整为flex项的外边距 */
+    max-width: calc(50% - 20px); /* 避免左右溢出 */
 }
 
 /* 渐显文字效果 */
@@ -94,6 +90,23 @@ main {
     text-align: center;
     font-size: 18px;
     margin: 20px 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: var(--font-size-base);
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #555; /* 添加悬停效果 */
 }
 
 /* 追思相片集 */
@@ -254,5 +267,20 @@ footer p {
     .business-card-img {
         width: 100%;
         max-width: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .slideshow-container,
+    .remembrance-item,
+    .business-card-img {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .remembrance-item {
+        flex-basis: calc(33.333% - 40px); /* 三栏布局 */
     }
 }
