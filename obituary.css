@@ -95,7 +95,32 @@ main {
     });
 }
 
+        /* 花篮样式 */
+        .flower-basket-item {
+            margin-bottom: 20px;
+            text-align: center;
+        }
         
+        .flower-basket-item img {
+            width: 100%;
+            max-width: 300px; /* 限制花篮图片的最大宽度 */
+            height: auto;
+            cursor: pointer;
+            border: 1px solid #ccc; /* 图片边框 */
+            border-radius: 10px; /* 圆角 */
+        }
+        
+        .price {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        /* 隐藏花篮画廊，除非显示 */
+        #flower-basket-gallery {
+            display: none;
+        }
+
 /* 固定聯絡方式 */
 #fixed-links {
     position: fixed;
@@ -140,34 +165,6 @@ main {
 .share-btn img {
     width: 30px;
     height: 30px;
-}
-
-/* 花篮画廊 */
-.flower-basket-item {
-    max-width: 180px;
-    text-align: center;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    background-color: #fff;
-    margin: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.flower-basket-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.price {
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
 }
 
 /* 页脚部分 */
