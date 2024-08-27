@@ -167,22 +167,41 @@ main {
     height: 30px;
 }
 
-/* 页脚部分 */
-footer {
-    background-color: #f4f4f4;
-    padding: 20px;
-    text-align: center;
-    font-family: Arial, sans-serif;
+        /* 页脚部分的样式 */
+        footer {
+            background-color: #f4f4f4; /* 背景颜色 */
+            padding: 20px; /* 内边距 */
+            text-align: center; /* 文本居中 */
+            font-family: Arial, sans-serif; /* 字体 */
+        }
+
+        footer p {
+            margin: 5px 0; /* 上下外边距 */
+            color: #333; /* 文字颜色 */
+        }
+
+        .footer-signature {
+            font-weight: bold; /* 字体加粗 */
+        }
+
+        .bold {
+            font-weight: bold; /* 字体加粗 */
+            text-decoration: none; /* 去掉链接下划线 */
+        }
+
+        footer img {
+            vertical-align: middle; /* 图标垂直对齐 */
+        }
+
+        footer a {
+            margin: 0 10px; /* 图标间距 */
+        }
+
+        .fade-in-text {
+    opacity: 0; /* 初始透明度为0 */
+    transition: opacity 2s ease-in-out; /* 渐变效果 */
 }
 
-footer p {
-    margin: 5px 0;
-    color: #333;
-}
-
-.footer-signature {
-    font-weight: bold;
-}
 
 /* 响应式设计：在小屏幕上的适应 */
 @media (max-width: 768px) {
