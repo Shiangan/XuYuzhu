@@ -216,24 +216,39 @@ main {
     height: 30px;
 }
 
-/* 页脚部分 */
-footer {
-    font-family: 'YourChosenFont', sans-serif;
-    padding: 8px 0;
-    font-size: 0.85em;
-    background-color: #f9f9f9;
-    border-top: 1px solid #dcdcdc;
-    text-align: center;
-    margin-top: 20px;
-}
+/* 页脚部分的样式 */
+        footer {
+            background-color: #f4f4f4; /* 背景颜色 */
+            padding: 20px; /* 内边距 */
+            text-align: center; /* 文本居中 */
+            font-family: Arial, sans-serif; /* 字体 */
+        }
 
-footer p {
-    margin: 5px 0;
-    color: #333;
-}
+        footer p {
+            margin: 5px 0; /* 上下外边距 */
+            color: #333; /* 文字颜色 */
+        }
 
-.footer-signature {
-    font-weight: bold;
+        .footer-signature {
+            font-weight: bold; /* 字体加粗 */
+        }
+
+        .bold {
+            font-weight: bold; /* 字体加粗 */
+            text-decoration: none; /* 去掉链接下划线 */
+        }
+
+        footer img {
+            vertical-align: middle; /* 图标垂直对齐 */
+        }
+
+        footer a {
+            margin: 0 10px; /* 图标间距 */
+        }
+
+        .fade-in-text {
+    opacity: 0; /* 初始透明度为0 */
+    transition: opacity 2s ease-in-out; /* 渐变效果 */
 }
 
 /* 响应式设计 */
