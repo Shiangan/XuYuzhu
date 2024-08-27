@@ -33,7 +33,7 @@ main {
 /* 主要照片部分 */
 .main-photo-section img,
 .paper-obituary-section img {
-    width: 80%;
+    width: 100%;
     max-width: 600px;
     height: auto;
     border: 2px solid #ddd;
@@ -43,33 +43,36 @@ main {
     margin: 0 auto 20px;
 }
 
+/* 生命故事部分 */
 #life-story {
     text-align: center;
     font-size: 18px;
     margin-bottom: 20px;
 }
 
+/* 讣闻部分 */
 .paper-obituary-section h2 {
     text-align: center;
     font-size: 20px;
     margin-bottom: 15px;
 }
 
-/* 追思与緬懷部分 */
+/* 追思与怀念部分 */
 .remembrance-details {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-around;
+    justify-content: center;
     margin-bottom: 20px;
 }
 
 .remembrance-item {
     flex-grow: 1;
     flex-basis: calc(50% - 40px);
-    margin: 10px;
     max-width: calc(50% - 20px);
+    margin: 10px;
+    box-sizing: border-box;
 }
 
 /* 渐显文字效果 */
@@ -96,14 +99,14 @@ main {
 }
 
 .button:hover {
-    background-color: #555; /* 添加悬停效果 */
-    transform: scale(1.05);
+    background-color: #555;
+    transform: scale(1.05); /* 添加放大效果 */
 }
 
 /* 追思相片集 */
 .slideshow-container {
     position: relative;
-    max-width: 80%;
+    max-width: 100%;
     margin: 20px auto;
     overflow: hidden;
     border: 2px solid #ddd;
@@ -151,7 +154,7 @@ main {
 }
 
 .flower-basket-item img {
-    width: 100%; 
+    width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -171,7 +174,7 @@ main {
     transform: scale(1.05);
 }
 
-/* 固定聯絡方式 */
+/* 固定联络方式 */
 #fixed-links {
     position: fixed;
     bottom: 20px;
@@ -219,32 +222,32 @@ main {
 
 /* 页脚部分的样式 */
 footer {
-    background-color: #f4f4f4; /* 背景颜色 */
-    padding: 20px; /* 内边距 */
-    text-align: center; /* 文本居中 */
-    font-family: Arial, sans-serif; /* 字体 */
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
 }
 
 footer p {
-    margin: 5px 0; /* 上下外边距 */
-    color: #333; /* 文字颜色 */
+    margin: 5px 0;
+    color: #333;
 }
 
 .footer-signature {
-    font-weight: bold; /* 字体加粗 */
+    font-weight: bold;
 }
 
 .bold {
-    font-weight: bold; /* 字体加粗 */
-    text-decoration: none; /* 去掉链接下划线 */
+    font-weight: bold;
+    text-decoration: none;
 }
 
 footer img {
-    vertical-align: middle; /* 图标垂直对齐 */
+    vertical-align: middle;
 }
 
 footer a {
-    margin: 0 10px; /* 图标间距 */
+    margin: 0 10px;
 }
 
 /* 响应式设计 */
