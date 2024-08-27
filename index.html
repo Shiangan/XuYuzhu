@@ -57,10 +57,14 @@
             margin: auto;
         }
 
-        .slide {
-            display: none; /* 隐藏幻灯片 */
-            text-align: center;
-        }
+        .slideshow-container:hover .slides {
+    animation-play-state: paused; /* 悬停时暂停动画 */
+}
+
+        .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
 
         .slide img {
             width: 100%; /* 确保图片适应幻灯片容器 */
@@ -112,7 +116,7 @@
 <body>
     <!-- 背景音乐 -->
     <audio id="background-music" autoplay loop hidden>
-        <source src="千風之歌.mp3" type="audio/mpeg">
+        <source src="千風之歌.m4a" type="audio/mpeg">
         您的浏览器不支持音频播放。
     </audio>
 
@@ -130,8 +134,6 @@
             </p>
                  <p>杖期夫 黃德堂 率 孝女 佳玲 親視含殮 遵禮成服 豎靈於 桃園佛緣苑會館 2F ［牌位區15號］。</p>
                  <p>將設奠於113年09月18日（三）舉行追思會儀式，感謝親友們在這段時間的慰問與關心，您的關懷和鼓勵，陪伴我們度過了這段艱難的時光。</p>
-                         <p><strong>敬邀您，與我們一同追思懷念黃徐玉珠夫人，並向您獻上最深的敬意，感謝您。</strong></p>
-                                            <p><strong>家人們，銘記在心，衷心感謝。</strong></p>
         </section>
 
         <!-- 訃告紙本部分 -->
@@ -185,6 +187,13 @@
                 </iframe>
             </div>
         </section>
+
+        <section id="thanks">
+        <section></section>
+<p><strong>敬邀您，與我們一同追思懷念黃徐玉珠夫人，並向您獻上最深的敬意，感謝您。</strong></p>
+                                            <p><strong>家人們，銘記在心，衷心感謝。</strong></p>
+        /secion>
+
         
     <!-- 致贈花籃部分 -->
 <section id="donate-flower">
