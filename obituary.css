@@ -31,33 +31,22 @@ main {
 }
 
 /* 主要照片部分 */
-.main-photo-section img {
+.main-photo-section img,
+.paper-obituary-section img {
     width: 80%;
-    max-width: 600px; /* 调整最大宽度为600px */
+    max-width: 600px;
     height: auto;
     border: 2px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: block;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 20px;
 }
 
 #life-story {
     text-align: center;
     font-size: 18px;
     margin-bottom: 20px;
-}
-
-/* 訃聞纸本部分 */
-.paper-obituary-section img {
-    width: 80%;
-    max-width: 600px; /* 调整最大宽度为600px */
-    height: auto;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: block;
-    margin: 0 auto 20px auto;
 }
 
 .paper-obituary-section h2 {
@@ -79,8 +68,8 @@ main {
 .remembrance-item {
     flex-grow: 1;
     flex-basis: calc(50% - 40px);
-    margin: 10px; /* 调整为flex项的外边距 */
-    max-width: calc(50% - 20px); /* 避免左右溢出 */
+    margin: 10px;
+    max-width: calc(50% - 20px);
 }
 
 /* 渐显文字效果 */
@@ -92,17 +81,18 @@ main {
     margin: 20px 0;
 }
 
+/* 按钮样式 */
 .button {
     display: inline-block;
     padding: 10px 20px;
-    font-size: var(--font-size-base);
+    font-size: 16px;
     color: #fff;
-    background-color: var(--primary-color);
+    background-color: #333;
     border: none;
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+        transition: background-color 0.3s ease;
 }
 
 .button:hover {
@@ -112,7 +102,7 @@ main {
 /* 追思相片集 */
 .slideshow-container {
     position: relative;
-    max-width: 80%; /* 调整最大宽度为80% */
+    max-width: 80%;
     margin: 20px auto;
     overflow: hidden;
     border: 2px solid #ddd;
@@ -148,43 +138,36 @@ main {
 
 /* 花篮画廊 */
 .flower-basket-item {
-    max-width: 180px; /* 调整最大宽度为180px */
+    max-width: 180px;
     text-align: center;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px;
     background-color: #fff;
-    margin: 10px; /* 在项目四周添加10像素的外边距，避免过于拥挤 */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 添加过渡效果 */
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .flower-basket-item img {
     width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto; /* 图片居中 */
+    margin: 0 auto;
 }
 
 .price {
     margin-top: 10px;
     font-size: 16px;
     font-weight: bold;
-    color: #333; /* 确保文字颜色与背景有良好的对比 */
-    text-align: center; /* 价格文本居中 */
+    color: #333;
+    text-align: center;
 }
 
 /* 悬停效果 */
 .flower-basket-item:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05); /* 略微放大效果 */
-}
-
-/* 响应式设计 - 小屏幕适配 */
-@media (max-width: 480px) {
-    .flower-basket-item {
-        max-width: 100%; /* 在小屏幕上让项目占满可用空间 */
-    }
+    transform: scale(1.05);
 }
 
 /* 固定聯絡方式 */
@@ -253,12 +236,10 @@ footer p {
     font-weight: bold;
 }
 
-
-
-/* 响应式设计：在小屏幕上的适应 */
+/* 响应式设计 */
 @media (max-width: 768px) {
     .remembrance-item {
-        flex: 1 1 100%; /* 单栏布局 */
+        flex-basis: 100%;
         max-width: 100%;
     }
 
@@ -284,3 +265,4 @@ footer p {
         flex-basis: calc(33.333% - 40px); /* 三栏布局 */
     }
 }
+    
