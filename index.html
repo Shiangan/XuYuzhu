@@ -53,7 +53,7 @@
             <div class="remembrance-details">
                 <div class="remembrance-item">
                     <h3><strong>豎靈地點</strong></h3>
-                    <p><strong><a href="https://maps.app.goo.gl/Gy4b5KzT3Z6YGmXB8?g_st=com.google.maps.preview.copy" target="_blank">桃園市立殯儀館 [ 懷德廳 ]</a></strong></p>
+                    <p><strong><a href="https://maps.app.goo.gl/nrjV9YHrTAE9bbMX9?g_st=com.google.maps.preview.copy" target="_blank">桃園市立殯儀館 [ 懷德廳 ]</a></strong></p>
                     <p><strong>桃園 佛緣苑會館 2F [牌位區15號]</strong></p>
                     <p><strong>地址：330桃園市桃園區大有路920號</a></strong></p>
                 </div>
@@ -118,7 +118,14 @@
 
         .fade-in-text {
     opacity: 0; /* 初始透明度为0 */
-    transition: opacity 2s ease-in-out; /* 渐变效果 */
+    animation: fadeIn 2s ease-in-out forwards; /* 使用动画来逐渐显示 */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* 最终透明度为1 */
+    }
+}
 }
 
         /* 幻灯片样式 */
