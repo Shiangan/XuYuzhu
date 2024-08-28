@@ -1,11 +1,47 @@
-body {
-    font-family: '华康钢笔体W2.ttc', sans-serif; /* 使用优雅的字体 */
-    background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-    color: #333;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
+        body {
+            font-family: 'Noto Serif', serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .main-photo-section img,
+        .paper-obituary-section img,｛
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .main-photo-section img:hover,
+        .paper-obituary-section img:hover,
+        .flower-basket-item img:hover {
+            transform: scale(1.05);
+        }
+
+        #fixed-links {
+            position: fixed;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            background: rgba(44, 62, 80, 0.8);
+            padding: 10px;
+            border-radius: 10px 0 0 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        #fixed-links img {
+            display: block;
+            margin: 10px 0;
+        }
+
 /* 页眉样式 */
 header {
     text-align: center;
@@ -14,7 +50,7 @@ header {
 }
 
 header img.logo {
-    width: 150px;
+    width: 120px;
     margin-bottom: 10px;
 }
 
