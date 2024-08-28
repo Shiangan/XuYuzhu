@@ -95,36 +95,6 @@ main {
     margin: 20px 0;
 }
 
-/* 追思相片集 */
-.slideshow-container {
-    position: relative;
-    max-width: 80%; /* 调整最大宽度为80% */
-    margin: 20px auto;
-    overflow: hidden;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.slides {
-    display: flex;
-    animation: slide 10s infinite;
-}
-
-.slides div {
-    flex-shrink: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slides img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    border-bottom: 2px solid #ddd;
-}
 
 @keyframes slide {
     0% { transform: translateX(0); }
