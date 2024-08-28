@@ -132,33 +132,7 @@ main {
     100% { transform: translateX(0); }
 }
 
-/* 花篮画廊 */
-.flower-basket-item {
-    max-width: 180px; /* 调整最大宽度为180px */
-    text-align: center;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    background-color: #fff;
-    margin: 10px; /* 在项目四周添加10像素的外边距，避免过于拥挤 */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 添加过渡效果 */
-}
 
-.flower-basket-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto; /* 图片居中 */
-}
-
-.price {
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #333; /* 确保文字颜色与背景有良好的对比 */
-    text-align: center; /* 价格文本居中 */
-}
 
 /* 悬停效果 */
 .flower-basket-item:hover {
@@ -219,36 +193,6 @@ main {
     height: 30px;
 }
 
-    <style>
-        /* 页脚部分的样式 */
-        footer {
-            background-color: #f4f4f4; /* 背景颜色 */
-            padding: 20px; /* 内边距 */
-            text-align: center; /* 文本居中 */
-            font-family: Arial, sans-serif; /* 字体 */
-        }
-
-        footer p {
-            margin: 5px 0; /* 上下外边距 */
-            color: #333; /* 文字颜色 */
-        }
-
-        .footer-signature {
-            font-weight: bold; /* 字体加粗 */
-        }
-
-        .bold {
-            font-weight: bold; /* 字体加粗 */
-            text-decoration: none; /* 去掉链接下划线 */
-        }
-
-        footer img {
-            vertical-align: middle; /* 图标垂直对齐 */
-        }
-
-        footer a {
-            margin: 0 10px; /* 图标间距 */
-        }
 
 /* 响应式设计：在小屏幕上的适应 */
 @media (max-width: 768px) {
